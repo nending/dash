@@ -305,7 +305,7 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        //vSeeds.push_back(CDNSSeedData("paccoin.net",  "testnet-seed.paccoin.net"));
+        vSeeds.push_back(CDNSSeedData("paccoin.io",  "testnet-dnsseed.paccoin.io"));
 
         // Testnet Paccoin addresses start with 'q'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,120);
