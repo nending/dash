@@ -36,7 +36,7 @@ color:#333;
 }
 
 QMenu::item:selected {
-background-color:#f2f0f0;
+background-color:#F8F6F6;
 color:#333;
 }
 
@@ -48,7 +48,7 @@ margin:0;
 }
 
 QToolBar > QToolButton {
-background-color:#fff;
+background-color:#F8F6F6;
 border:0px solid #333;
 min-height:2.5em;
 min-width: 8em;
@@ -103,7 +103,7 @@ background-color:#f2f2f2;
 /*******************************************************/
 
 QPushButton { /* Global Button Style */
-background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: .01 #FFFFFF, stop: .1 #757474, stop: .95 #757474, stop: 1 #999);
+background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: .01 #757474, stop: .1 #757474, stop: .95 #757474, stop: 1 #757474);
 border:0;
 border-radius:3px;
 color:#ffffff;
@@ -117,7 +117,7 @@ padding-bottom:5px;
 }
 
 QPushButton:hover {
-background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: .01 #FFFFFF, stop: .1 #999, stop: .95 #999, stop: 1 #999);
+background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: .01 #999, stop: .1 #999, stop: .95 #999, stop: 1 #999);
 }
 
 QPushButton:focus {
@@ -278,7 +278,7 @@ background-color:transparent;
 
 QHeaderView::section { /* Table Header Sections */
 qproperty-alignment:center;
-background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 0.25, stop: 0 #FFFFFF, stop: 1 #A59A9A);
+background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 0.25, stop: 0 #A59A9A, stop: 1 #A59A9A);
 color:#fff;
 min-height:25px;
 font-weight:bold;
@@ -303,7 +303,7 @@ border:0px;
 
 .QTableView { /* Table - has to be selected as a class otherwise it throws off QCalendarWidget */
 background:transparent;
-border:0px solid #fff;
+border:0px solid #000;
 }
 
 QTableView::item { /* Table Item */
@@ -1120,8 +1120,8 @@ margin-left:67px;
 margin-top:10px;
 margin-right:5px;
 padding-right:5px;
-font-weight:normal;
-font-size:18;
+font-weight:bold;
+font-size:24;
 min-height:24px;
 }
 
@@ -1321,7 +1321,7 @@ padding-right:5px;
 }
 
 QStackedWidget#SendCoinsEntry .QFrame#SendCoins .QLabel#amountLabel {
-color: #fff;
+color: #999;
 background-color:#999;
 }
 
