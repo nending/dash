@@ -42,6 +42,7 @@ void CMasternodeSync::BumpAssetLastTime(std::string strFuncName)
 
 std::string CMasternodeSync::GetAssetName()
 {
+    return "MASTERNODE_SYNC_FINISHED";
     switch(nRequestedMasternodeAssets)
     {
         case(MASTERNODE_SYNC_INITIAL):      return "MASTERNODE_SYNC_INITIAL";
@@ -154,6 +155,8 @@ void CMasternodeSync::ProcessTick(CConnman& connman)
 {
     static int nTick = 0;
     if(nTick++ % MASTERNODE_SYNC_TICK_SECONDS != 0) return;
+
+    return;
 
     // reset the sync process if the last call to this function was more than 60 minutes ago (client was in sleep mode)
     static int64_t nTimeLastProcess = GetTime();
