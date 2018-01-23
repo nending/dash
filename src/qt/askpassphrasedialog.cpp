@@ -122,7 +122,7 @@ void AskPassphraseDialog::accept()
                 {
                     QMessageBox::warning(this, tr("Wallet encrypted"),
                                          "<qt>" +
-                                         tr("Paccoin Core will close now to finish the encryption process. "
+                                         tr("$PAC Core will close now to finish the encryption process. "
                                          "Remember that encrypting your wallet cannot fully protect "
                                          "your paccoins from being stolen by malware infecting your computer.") +
                                          "<br><br><b>" +
